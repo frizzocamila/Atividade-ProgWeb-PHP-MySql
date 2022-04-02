@@ -1,7 +1,7 @@
 <?php  
     session_start();
     if (!isset($_SESSION['user'])) {
-        header('Location: http://localhost/session/AcessoNegado.php');
+        header('Location: http://localhost/FinalWork/AcessoNegado.php');
     }
 ?>
 <!DOCTYPE html>
