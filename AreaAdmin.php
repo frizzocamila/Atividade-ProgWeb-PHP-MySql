@@ -32,7 +32,7 @@
         #cor-amarelo { background-color: #fcfccb}        
     </style>
 </head>
-<body>
+<body id="#corpo">
     <?php
         echo '<h3>Bem Vindo <label> '.$_SESSION['user'].'</label>!</h3>';     
      ?>
@@ -43,8 +43,11 @@
         <a href="CookieManager.php?cor=daf5fa"><div id="cor-azul" class="cores"></div></a> 
         <a href="CookieManager.php?cor=d1fecb"><div id="cor-verde" class="cores"></div></a> 
         <a href="CookieManager.php?cor=fcfccb"><div id="cor-amarelo" class="cores"></div></a> 
-    </div>
-
-    
+    </div>    
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script> 
+        console.log(Cookies.get("cor_preferida"));
+        document.getElementById('#corpo').style.backgroundColor = "#" + Cookies.get("cor_preferida");
+    </script>
 </body>
 </html>
