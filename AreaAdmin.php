@@ -46,8 +46,8 @@
     </div>    
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
     <script> 
-        console.log(Cookies.get("cor_preferida"));
-        document.getElementById('#corpo').style.backgroundColor = "#" + Cookies.get("cor_preferida");
+        console.log(Cookies.get("cor_bg"));
+        document.getElementById('#corpo').style.backgroundColor = "#" + Cookies.get("cor_bg");
     </script>
 </body>
 </html>
